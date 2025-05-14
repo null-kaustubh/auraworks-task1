@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div className="gray-text">Sidebar</div>;
+  return (
+    <div>
+      <div className="pl-[250px]">Main Page</div>
+    </div>
+  );
 }
