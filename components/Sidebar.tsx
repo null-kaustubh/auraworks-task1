@@ -1,13 +1,4 @@
-import {
-  Activity,
-  Bell,
-  CreditCard,
-  FileClock,
-  House,
-  Inbox,
-  Settings,
-  UserRound,
-} from "lucide-react";
+import { Activity, FileClock, House, Settings, UserRound } from "lucide-react";
 import { Command, CommandGroup, CommandItem, CommandList } from "./ui/command";
 
 export default function Sidebar() {
@@ -59,10 +50,10 @@ export default function Sidebar() {
             style={{ overflow: "visible" }}
           >
             <CommandList style={{ overflow: "visible" }}>
-              {menuList.map((menuItem: any, key: number) => {
+              {menuList.map((menuItem, key: number) => {
                 return (
                   <CommandGroup key={key} heading={menuItem.group}>
-                    {menuItem.items.map((option: any, optionKey: number) => (
+                    {menuItem.items.map((option, optionKey: number) => (
                       <CommandItem
                         key={optionKey}
                         className="flex gap-2 cursor-pointer"
