@@ -12,14 +12,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className=" border-b border-gray-300">
-      <div className="flex flex-row justify-between mx-10 my-5">
+    <div className="fixed top-0 left-0 right-0 border-b border-gray-300 bg-white z-10">
+      <div className="flex flex-row justify-between px-10 py-5">
         <Link href="/">
           <button className="cursor-pointer">
             <h1 className="text-active text-3xl font-bold">AIOrtho</h1>
           </button>
         </Link>
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row gap-6">
           <Button
             variant="ghost"
             size="icon"

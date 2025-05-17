@@ -52,9 +52,12 @@ export default function Sidebar() {
 
   return (
     <div>
-      <div className="fixed flex flex-col gap-4 w-[250px] min-w-[250px] border-r border-gray-300 min-h-screen">
-        <div className="grow">
-          <Command style={{ overflow: "visible" }}>
+      <div className="fixed top-0 left-0 pt-20 flex flex-col gap-4 w-[250px] min-w-[250px] border-r border-gray-300 h-screen">
+        <div className="grow overflow-y-auto">
+          <Command
+            className="border-none shadow-none"
+            style={{ overflow: "visible" }}
+          >
             <CommandList style={{ overflow: "visible" }}>
               {menuList.map((menuItem: any, key: number) => {
                 return (

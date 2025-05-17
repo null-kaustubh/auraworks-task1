@@ -1,7 +1,13 @@
+import UserInfo from "@/components/UserInfo";
+import QuickMenu from "@/components/QuickMenu";
+import PatientDetails from "@/components/PatientDetails";
+
 export default function Home() {
   return (
-    <div>
-      <div className="pl-[250px]">Main Page</div>
+    <div className="pl-[250px]">
+      <UserInfo />
+      <QuickMenu />
+      <PatientDetails />
     </div>
   );
 }

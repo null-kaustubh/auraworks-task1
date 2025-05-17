@@ -6,6 +6,7 @@
 :root {
   /* Base colors */
   --page: #EEF4FF;
+  --page-main: #F1F4F9;
   --text-active: #0054A6;
   --text-gray: #66798D;
   --radius: 0.625rem;
